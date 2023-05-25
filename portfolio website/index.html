@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            height: 60px;
+            background-color: rgba(0, 0, 60);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0px 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(160, 118, 200);
+        }
+
+
+
+        .left {
+            font-size: 1.4rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 10vh 0;
+
+        }
+
+        .firstsection>div {
+            width: 30%;
+
+        }
+
+        .leftsection {
+            font-size: 2.5rem;
+
+        }
+
+
+
+        .rightsection img {
+            width: 80%;
+
+        }
+
+        .name {
+            color: rgb(139, 81, 194);;
+        }
+
+        #element {
+            color: rgb(160, 118, 200);
+        }
+
+        .btn {
+            background-color: #2924cd6e;
+            color: white;
+            width: 200px;
+            font-size: 1.2rem;
+            height: 50px;
+            border: 2px solid white;
+            border-radius: 6px;
+            margin-top: 30px;
+            
+        }
+
+        .skills {
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Aditya Walke</div>
+            <div class="right">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Projects</a></li>
+                    <li><a href="">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">Hi, My name is <span class="name">Aditya</span>
+                <div> and I am a </div>
+                <div> Web Developer.</div>
+                <div class="skills">Skills</div>
+                <span id="element"></span>
+                <div>
+                    <button class="btn">Download Resume</button>
+                    <button class="btn">Visit GitHub</button>
+                </div>
+            </div>
+            <div class="rightsection">
+                <img src="bg.svg" alt="">
+            </div>
+        </section>
+    </main>
+    <section class="second-section"> 
+      <h1>Hands On Projects</h1>
+    </section>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['React JS', 'Node JS', 'Javascript', 'Git', 'Github', 'CSS', 'HTML',
+                      'React JS', 'Node JS', 'Javascript', 'Git', 'Github', 'CSS', 'HTML',
+                      'React JS', 'Node JS', 'Javascript', 'Git', 'Github', 'CSS', 'HTML',
+                      'React JS', 'Node JS', 'Javascript', 'Git', 'Github', 'CSS', 'HTML',
+                      'React JS', 'Node JS', 'Javascript', 'Git', 'Github', 'CSS', 'HTML'],
+            typeSpeed: 50,
+        })
+    </script>
+</body>
+
+</html>
